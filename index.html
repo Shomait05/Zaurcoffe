@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Кофейня Заур - Главная</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu" role="menubar" aria-label="Главное меню">
+        <li class="top" role="none">
+          <a href="index.html" role="menuitem" tabindex="0" aria-current="page">Главная</a>
+        </li>
+        <li class="top dropdown" role="none" aria-haspopup="true" aria-expanded="false">
+          <a href="#" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Меню ▼</a>
+          <ul class="submenu" role="menu" aria-label="Подменю Меню">
+            <li role="none"><a href="menu.html#coffee" role="menuitem" tabindex="-1">Кофе</a></li>
+            <li role="none"><a href="menu.html#cakes" role="menuitem" tabindex="-1">Торты</a></li>
+            <li role="none"><a href="menu.html#pies" role="menuitem" tabindex="-1">Пироги</a></li>
+          </ul>
+        </li>
+        <li class="top" role="none">
+          <a href="contacts.html" role="menuitem" tabindex="0">Контакты</a>
+        </li>
+        <li class="top" role="none" style="margin-left:auto;">
+          <button id="themeToggle" aria-label="Переключить тему" class="theme-toggle">🌙</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero animate-fadein" aria-label="Приветствие">
+      <h1>Кофейня Заур - Вкус Махачкалы в каждой чашке</h1>
+      <p>Уютное место, где кофе и десерты создаются с душой. Приходите за ароматным кофе и домашними тортами и пирогами на заказ.</p>
+      <button id="orderBtn" class="btn" aria-label="Заказать сейчас">Заказать сейчас</button>
+    </section>
+
+    <section class="about animate-slidein-left" aria-label="О кофейне">
+      <h2>О нашей кофейне</h2>
+      <p>Кофейня Заур открылась в 2015 году и с тех пор радует жителей Махачкалы и гостей города качественным кофе и свежей выпечкой. Мы тщательно подбираем зерна, используем только натуральные ингредиенты и готовим с любовью.</p>
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Интерьер кофейни Заур" class="responsive-img" />
+    </section>
+
+    <section class="advantages animate-slidein-right" aria-label="Преимущества">
+      <h2>Почему выбирают нас?</h2>
+      <ul>
+        <li><strong>Свежесть и качество:</strong> Только свежие продукты и натуральный кофе.</li>
+        <li><strong>Уникальные рецепты:</strong> Авторские торты и пироги по семейным рецептам Заура.</li>
+        <li><strong>Уютная атмосфера:</strong> Идеальное место для встреч с друзьями и работы.</li>
+        <li><strong>Быстрая доставка:</strong> Закажите торт или пирог с доставкой на дом.</li>
+      </ul>
+    </section>
+
+    <section class="gallery animate-fadein" aria-label="Галерея">
+      <h2>Галерея</h2>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=400&q=80" alt="Чашка кофе" />
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=400&q=80" alt="Торт шоколадный" />
+        <img src="https://images.unsplash.com/photo-1505253210343-7a3f0b12b9b4?auto=format&fit=crop&w=400&q=80" alt="Пирог с ягодами" />
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=400&q=80" alt="Интерьер кофейни" />
+      </div>
+    </section>
+
+    <section class="reviews animate-slidein-left" aria-label="Отзывы клиентов">
+      <h2>Отзывы наших клиентов</h2>
+      <blockquote>
+        <p>«Лучший кофе в Махачкале! Торты просто волшебные, особенно шоколадный с орехами.»</p>
+        <footer>- Алина, постоянный клиент</footer>
+      </blockquote>
+      <blockquote>
+        <p>«Заур и его команда - настоящие мастера своего дела. Заказывала пирог на праздник - все гости в восторге!»</p>
+        <footer>- Руслан</footer>
+      </blockquote>
+      <blockquote>
+        <p>«Уютная атмосфера и отличный сервис. Рекомендую всем, кто любит вкусный кофе и домашнюю выпечку.»</p>
+        <footer>- Марина</footer>
+      </blockquote>
+    </section>
+
+    <section class="contact-info animate-slidein-right" aria-label="Контактная информация">
+      <h2>Наш адрес и контакты</h2>
+      <p><strong>Адрес:</strong> г. Махачкала, ул. Примерная, 12</p>
+      <p><strong>Телефон:</strong> +7 (123) 456-78-90</p>
+      <p><strong>Email:</strong> zaur.coffee@example.com</p>
+      <div class="map-container" aria-label="Карта расположения кофейни">
+        <iframe 
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A0f5e4f4c2e0a1e9c6d6e6a2e8c7b1f8b6f2b6f8a2e6c6a2e8c7b1f8b6f2b6f8a&source=constructor" 
+          width="100%" height="300" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Кофейня Заур, Махачкала</p>
+  </footer>
+
+  <div id="customCursor"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
